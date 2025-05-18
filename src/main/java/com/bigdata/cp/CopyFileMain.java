@@ -107,7 +107,7 @@ public class CopyFileMain {
 
     public File copyDir(File file){
         if(!file.isDirectory()){
-            return null;
+            return this.outputPath.toFile();
         }
         String dirname = file.toPath().toString()
                 .substring(inputPath.toString().length());
